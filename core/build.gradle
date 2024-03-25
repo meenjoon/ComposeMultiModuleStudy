@@ -1,3 +1,6 @@
+/**
+ * core 모듈은 feature 모듈에서 공통적으로 사용되는 것들이 모아져 있는 모듈
+ */
 plugins {
     id 'com.android.library' // 앱 모듈 외의 모듈이 사용
 }
