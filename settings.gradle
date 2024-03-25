@@ -21,3 +21,4 @@ include ':features:feed'
 include ':libraries:storage'
 
 include ':libraries:storage-contract'
+include ':libraries:network'
