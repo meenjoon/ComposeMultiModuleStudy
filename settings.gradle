@@ -20,3 +20,4 @@ include ':features:detail'
 include ':features:feed'
 include ':libraries:storage'
 
+include ':libraries:storage-contract'
