@@ -1,4 +1,4 @@
-package com.mbj.featuresfeed
+package com.mbj.restaurantapp.features.feed
 
 import org.junit.Test
 
