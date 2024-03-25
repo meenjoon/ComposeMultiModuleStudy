@@ -1,4 +1,4 @@
-package kr.co.fastcampus.part4plus.restaurantapp.features.dialogs
+package kr.co.fastcampus.part4plus.restaurantapp.features.feed.dialog
 
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
