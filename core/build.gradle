@@ -1,14 +1,21 @@
 plugins {
-    id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
+    id 'com.android.library' // 앱 모듈 외의 모듈이 사용
 }
 
-dependencies {
+apply from: "../base-build.gradle"
 
-    implementation 'androidx.core:core-ktx:1.9.0'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.11.0'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+dependencies {
+    /**
+     * implementation : 프로젝트 라이브러리에서 가져옴 ==> 이 라이브러리는 이 모듈에서 사용한다고 지정을 해주는 것
+     ==> 현재의 모듈에서만 해당 라이브러리를 사용한다고 선언하는것임
+     ==> 즉, 이 모듈을 참조하는 다른 모듈은 implementation으로 선언한 라이브러리에는 접근할 수 없다는 말임
+
+     * api : 해당 라이브러리가 현재 사용되는 곳이 해당하는 모듈 뿐만 아니라 해당 모듈을 참조하는 다른 라이브러리들 또한 해당 라이브러리를 사용할 수 있게 해줌
+     ==> 예를 들어, 현재 core 모듈을 참조하는 모듈은 features 모듈인데, features 모듈은 api로 선언한 ui-components를 사용할 수 있다는 뜻임
+     ==> 그렇게 되면, features에서 ui-components(컴포저블 함수를 모아둔)를 사용할 수 있게 된다.
+     ==> 그렇기에 이것을 함부로 쓰면 꼬이기 때문에 조심해서 사용해야한다.
+     */
+    implementation(project(path: ':libraries:network-contract'))
+    implementation(project(path: ':libraries:storage-contract'))
+    api(project(path: ':ui_components'))
 }
