@@ -22,3 +22,4 @@ include ':libraries:storage'
 
 include ':libraries:storage-contract'
 include ':libraries:network'
+include ':libraries:network-contract'
