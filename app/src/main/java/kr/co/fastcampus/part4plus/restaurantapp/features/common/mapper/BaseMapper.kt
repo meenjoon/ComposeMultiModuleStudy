@@ -1,8 +1,8 @@
 package kr.co.fastcampus.part4plus.restaurantapp.features.common.mapper
 
 import kr.co.fastcampus.part4plus.restaurantapp.features.common.entity.EntityWrapper
-import kr.co.fastcampus.part4plus.restaurantapp.library.network.model.ApiResponse
-import kr.co.fastcampus.part4plus.restaurantapp.library.network.model.ApiResult
+import kr.co.fastcampus.part4plus.restaurantapp.libraries.network.model.ApiResponse
+import kr.co.fastcampus.part4plus.restaurantapp.libraries.network.model.ApiResult
 
 abstract class BaseMapper<M, E> {
 

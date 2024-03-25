@@ -6,7 +6,7 @@ import kr.co.fastcampus.part4plus.restaurantapp.features.common.entity.Restauran
 import kr.co.fastcampus.part4plus.restaurantapp.features.common.mapper.BaseMapper
 import kr.co.fastcampus.part4plus.restaurantapp.features.common.network.model.RestaurantResponse
 import kr.co.fastcampus.part4plus.restaurantapp.features.feed.data.FeedConstants
-import kr.co.fastcampus.part4plus.restaurantapp.library.storage.IStorage
+import kr.co.fastcampus.part4plus.restaurantapp.libraries.storage.IStorage
 import javax.inject.Inject
 
 class CategoryMapper @Inject constructor(
